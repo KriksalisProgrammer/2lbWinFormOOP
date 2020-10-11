@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_2lb.View.AddFabricaView" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAQAAgACAAQAAEBACAAAgSAAQAAgIAAAAABhAAACA=</HashCode>
+      <FileName>View\AddFabricaView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2lb.Form1" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAKAAARIAAgCgIAQCAAgCAQgAEAQQICAgAEE=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2lb.Factorial.Factor" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAADEAAABAACCkQCOAAAAKAhEAAgAAAAAAwAAACQA=</HashCode>
+      <FileName>Factorial\Factor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_2lb.Factorial.SpecialClass2lb.Investment" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factorial\Factor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2lb.Factorial.Storage" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factorial\Storage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\2lb.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\_2lb.Properties.Resources.resources
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\2lb.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\2lb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\2lb\2lb\bin\Debug\2lb.exe.config
+C:\Users\Admin\source\repos\2lb\2lb\bin\Debug\2lb.exe
+C:\Users\Admin\source\repos\2lb\2lb\bin\Debug\2lb.pdb
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\2lb.exe
+C:\Users\Admin\source\repos\2lb\2lb\obj\Debug\2lb.pdb
+C:\Users\Admin\source\repos\2Lb\2lb\obj\Debug\_2lb.Form1.resources
+C:\Users\Admin\source\repos\2Lb\2lb\obj\Debug\2lb.g.resources
+C:\Users\Admin\source\repos\2Lb\2lb\obj\Debug\_2lb.View.AddFabricaView.resources
