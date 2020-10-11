@@ -115,7 +115,7 @@ namespace _2lb.Factorial
         public static Factor operator +(Factor factor1, Factor factor2) => new Factor($"Слияние двух заводов:{factor1.NameFactorial+factor2.NameFactorial}",
             factor1.QuantityWorkings + factor2.QuantityWorkings,
             factor1.QuantityWorkShops + factor2.QuantityWorkShops,
-            factor1.Master+factor2.Master,
+            factor1.Master + factor2.Master,
             factor1.SalaryWorkings+factor2.SalaryWorkings,
             factor1.SalaryMasters+factor2.SalaryMasters);//слияние
         int IComparable.CompareTo(object obj)

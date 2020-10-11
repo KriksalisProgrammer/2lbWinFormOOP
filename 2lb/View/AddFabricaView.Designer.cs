@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFabricaView));
             this.OkButton = new System.Windows.Forms.Button();
             this.labelName = new System.Windows.Forms.Label();
             this.labelQWorking = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             // OkButton
             // 
             this.OkButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.OkButton.Location = new System.Drawing.Point(47, 210);
+            this.OkButton.Location = new System.Drawing.Point(16, 196);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(105, 37);
             this.OkButton.TabIndex = 0;
@@ -107,7 +108,7 @@
             // 
             this.textBoxName.Location = new System.Drawing.Point(227, 12);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(227, 20);
+            this.textBoxName.Size = new System.Drawing.Size(142, 20);
             this.textBoxName.TabIndex = 6;
             this.textBoxName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxName_KeyPress);
             // 
@@ -115,7 +116,7 @@
             // 
             this.textBoxQWorking.Location = new System.Drawing.Point(227, 52);
             this.textBoxQWorking.Name = "textBoxQWorking";
-            this.textBoxQWorking.Size = new System.Drawing.Size(227, 20);
+            this.textBoxQWorking.Size = new System.Drawing.Size(142, 20);
             this.textBoxQWorking.TabIndex = 7;
             this.textBoxQWorking.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxQWorking_KeyPress);
             // 
@@ -123,7 +124,7 @@
             // 
             this.textBoxQWorkShop.Location = new System.Drawing.Point(227, 89);
             this.textBoxQWorkShop.Name = "textBoxQWorkShop";
-            this.textBoxQWorkShop.Size = new System.Drawing.Size(227, 20);
+            this.textBoxQWorkShop.Size = new System.Drawing.Size(142, 20);
             this.textBoxQWorkShop.TabIndex = 8;
             this.textBoxQWorkShop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxQWorkShop_KeyPress);
             // 
@@ -131,7 +132,7 @@
             // 
             this.textBoxSWorking.Location = new System.Drawing.Point(227, 124);
             this.textBoxSWorking.Name = "textBoxSWorking";
-            this.textBoxSWorking.Size = new System.Drawing.Size(227, 20);
+            this.textBoxSWorking.Size = new System.Drawing.Size(142, 20);
             this.textBoxSWorking.TabIndex = 9;
             this.textBoxSWorking.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSWorking_KeyPress);
             // 
@@ -139,14 +140,14 @@
             // 
             this.textBoxSMaster.Location = new System.Drawing.Point(227, 158);
             this.textBoxSMaster.Name = "textBoxSMaster";
-            this.textBoxSMaster.Size = new System.Drawing.Size(227, 20);
+            this.textBoxSMaster.Size = new System.Drawing.Size(142, 20);
             this.textBoxSMaster.TabIndex = 10;
             this.textBoxSMaster.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSMaster_KeyPress);
             // 
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CancelButton.Location = new System.Drawing.Point(269, 210);
+            this.CancelButton.Location = new System.Drawing.Point(258, 196);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(100, 37);
             this.CancelButton.TabIndex = 11;
@@ -158,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 259);
+            this.ClientSize = new System.Drawing.Size(385, 245);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.textBoxSMaster);
             this.Controls.Add(this.textBoxSWorking);
@@ -171,8 +172,9 @@
             this.Controls.Add(this.labelQWorking);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.OkButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFabricaView";
-            this.Text = "AddFabricaView";
+            this.Text = "Добавление завода";
             this.ResumeLayout(false);
             this.PerformLayout();
 

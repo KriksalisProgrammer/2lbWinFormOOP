@@ -38,14 +38,13 @@ namespace _2lb
            
             label1.Visible = false;
             dataGridView1.Visible = true;
-            AddFactor.Visible = true;
             buttonDell.Visible = true;
-            buttonSort.Visible = true;
             AddFabricaMenu.Visible = false;
             AddFabricaMenu.Enabled = false;
             AddPerson.Visible = true;
             numericAddDelPerson.Visible = true;
-            buttonSl.Visible = true;
+            label2.Visible = true;
+           
         }
       
         private void Form1_Load(object sender, EventArgs e)
@@ -56,14 +55,7 @@ namespace _2lb
 
         private void AddFactor_Click(object sender, EventArgs e)
         {
-            var dialog = new AddFabricaView();
-            if(dialog.ShowDialog()==DialogResult.OK)
-            {
-                Storage.AddObject(dialog.factor);
-                _bs.DataSource = Storage.factors;
-                _bs.ResetBindings(true);
-
-            }
+            
         }
       
         private void AddPerson_Click(object sender, EventArgs e)
@@ -96,15 +88,6 @@ namespace _2lb
 
             }
         }//удаление
-
-        private void buttonSort_Click(object sender, EventArgs e)
-        {
-            Array.Sort(Storage.factors);
-            _bs.ResetBindings(true);
-            Thread.Sleep(1000);
-            
-        }//сортировка
-
         private void buttonSl_Click(object sender, EventArgs e)
         {
             Factor factorcell = new Factor();
@@ -132,6 +115,65 @@ namespace _2lb
             }
         }//слияние
 
-        
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItemSort_Click(object sender, EventArgs e)
+        {
+            Array.Sort(Storage.factors);
+            _bs.ResetBindings(true);
+            Thread.Sleep(1000);
+        }
+
+        private void ToolStripMenuItemMerge_Click(object sender, EventArgs e)
+        {
+            Factor factorcell = new Factor();
+            foreach (DataGridViewRow row in this.dataGridView1.SelectedRows)
+            {
+                factorcell = row.DataBoundItem as Factor;
+                if (factorcell != null)
+                {
+
+                }
+
+            }
+            Factor factorcell1 = new Factor();
+            foreach (DataGridViewRow row1 in this.dataGridView1.SelectedRows)
+            {
+                factorcell1 = row1.DataBoundItem as Factor;
+                if (factorcell1 != null)
+                {
+                    Factor resultfact = factorcell + factorcell1;
+                    Storage.AddObject(resultfact);
+                    _bs.DataSource = Storage.factors;
+                    _bs.ResetBindings(true);
+                }
+
+            }
+        }
+
+        private void toolStripMenuAdd_Click(object sender, EventArgs e)
+        {
+            var dialog = new AddFabricaView();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                Storage.AddObject(dialog.factor);
+                _bs.DataSource = Storage.factors;
+                _bs.ResetBindings(true);
+
+            }
+        }
+
+        private void ToolStripMenuItemInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вторая лабораторная работа по СПЗ", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ToolStripMenuItemExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
